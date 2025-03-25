@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            font-size: 24px;
+        }
+        .search-section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .search-section input, .search-section button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-section button {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+        .hotels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .hotel {
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .hotel img {
+    
+            border-radius: 5px;
+        }
+        .hotel button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            border: none;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hotel button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotel Booking</h1>
+    </header>
+    
+    <section class="search-section">
+        <input type="text" placeholder="Enter location...">
+        <input type="date">
+        <input type="date">
+        <button>Search</button>
+        <input type="number" placeholder="Guests" min="1">
+        <select>
+            <option value="">Room Type</option>
+            <option value="single">Single</option>
+            <option value="double">Double</option>
+            <option value="suite">Suite</option>
+        </select>
+    </section>
+    
+    <section class="hotels">
+        <div class="hotel">
+            <img src="photo/OIP (1).jpeg" alt="Hotel 1">
+            <h3>Luxury Resort</h3>
+            <p>From ₹20000/night</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="hotel">
+            <img src="photo/city view.jpeg" alt="Hotel 2">
+            <h3>City View Hotel</h3>
+            <p>From ₹11150/night</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="hotel">
+            <img src="photo/beach.jpeg" alt="Hotel 3">
+            <h3>Beachside Inn</h3>
+            <p>From ₹11180/night</p>
+            <button>Book Now</button>
+        </div>
+    </section>
+</body>
+</html>
